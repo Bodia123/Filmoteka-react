@@ -38,3 +38,6 @@ img {
   max-width: 100%;
   height: auto;
 }
+.MuiPagination-ul {
+  justify-content: center;
+}
