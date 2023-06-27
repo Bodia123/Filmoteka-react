@@ -5,10 +5,14 @@ import css from './GeneralSection.module.css';
 const GeneralSection = function () {
   return (
     <>
-      <h2 className={css.title}>Головні Новинки</h2>
+      <h2 className={css.title}>Головні новинки</h2>
       <MainMovieSlider fetchBy={popularFetch} />
-      <MovieSlider fetchBy={fetchUpcommingMovie} />
+
+      <h2 className={css.title}>В тренді</h2>
       <MovieSlider fetchBy={fectTrandMovie} />
+
+      <h2 className={css.title}>Скоро на екранах</h2>
+      <MovieSlider fetchBy={fetchUpcommingMovie} />
     </>
   );
 };
