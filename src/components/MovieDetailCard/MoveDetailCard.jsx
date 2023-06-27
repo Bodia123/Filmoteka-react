@@ -8,7 +8,7 @@ import {
   deleteFromFavorite,
 } from 'Redux/FavoriteSlice/favoriteSlice';
 import { toast } from 'react-toastify';
-
+import ScrollToTop from 'Function/ScrollToTop';
 // components
 import {
   CardContainer,
@@ -66,6 +66,7 @@ const ItemCard = function () {
     });
     setLoader(true);
   }, [movieId]);
+  ScrollToTop();
 
   const { poster_path, title } = movie;
 
