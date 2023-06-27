@@ -1,0 +1,52 @@
+.popularLink {
+  /* display: flex; */
+  color: #fff;
+  text-decoration: none;
+}
+.popularImg {
+  /* display: block; */
+  /* margin: 0 auto;
+  margin: 0; */
+}
+.textContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.someDetail {
+  display: flex;
+  justify-content: center;
+}
+.votePar {
+}
+.vote {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  border: 1px solid rgb(255, 162, 0);
+  border-radius: 50%;
+}
+.releasePar {
+}
+.release {
+  margin-left: 5px;
+}
+
+.overviewPar {
+}
+.overviewPar > span {
+  color: #5a8bf6;
+}
+@media (min-width: 786px) {
+  .popularLink {
+    display: flex;
+  }
+  .popularImg {
+    max-height: 350px;
+  }
+}

@@ -1,0 +1,8 @@
+.wrapper {
+  background: linear-gradient(#141e30, #243b55);
+  height: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
