@@ -32,7 +32,7 @@ const GenreList = function ({ movieGenres }) {
       <List>
         {movieGenres.map(genre => (
           <Genre key={genre.id}>
-            <Link to="">
+            <Link to={`/genres/${genre.id}`}>
               <span>{genre.name}</span>
             </Link>
           </Genre>

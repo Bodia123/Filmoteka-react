@@ -1,7 +1,7 @@
 // import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 //components
-import WatchLater from 'components/ProfileComponents/WatchLaterList/WatchLater';
+import ListMovie from 'components/GeneralComponent/GeneralMovieList/List';
 //
 
 const Profile = function () {
@@ -9,7 +9,7 @@ const Profile = function () {
 
   return (
     <>
-      <WatchLater movie={favorite} />
+      <ListMovie movie={favorite} />
     </>
   );
 };

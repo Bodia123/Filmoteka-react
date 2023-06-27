@@ -32,6 +32,15 @@ export const fetchUpcommingMovie = function (page = 1) {
     .then(response => response.json())
     .catch(err => console.error(err));
 };
+export const fetchByGenreId = function (genreId, page = 1) {
+  return fetch(
+    `https://api.themoviedb.org/3/movie/popular?language=uk-UA&include_adult=false&page=${page}&with_genres=${genreId}`,
+    options
+  )
+    .then(response => response.json())
+
+    .catch(err => console.error(err));
+};
 //
 
 //fetch by

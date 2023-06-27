@@ -1,4 +1,4 @@
-import { MovieSlider } from 'components/MainPageSection/MoiveSlider/MovieSlider';
+import MovieSlider from 'components/GeneralComponent/GeneralSlider/GeneralSlider';
 import MainMovieSlider from '../MainMovieSlider/MainMoviesSlider';
 import { popularFetch, fetchUpcommingMovie, fectTrandMovie } from 'service';
 import css from './GeneralSection.module.css';

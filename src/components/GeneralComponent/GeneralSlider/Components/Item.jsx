@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import css from '../MovieSlider.module.css';
+import css from '../GenralSlider.module.css';
 
-export const ItemCollection = function ({ item }) {
+const ItemCollection = function ({ item }) {
   return (
     <div key={item.id} className={css.popularItem}>
       <Link to={`/movies/${item.id}`} className={css.popularLink}>
@@ -16,3 +16,4 @@ export const ItemCollection = function ({ item }) {
     </div>
   );
 };
+export default ItemCollection;

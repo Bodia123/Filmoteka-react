@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import Loader from 'components/Loader/Loader';
 
-import css from './MovieSlider.module.css';
-import { ItemCollection } from './SliderItem/SliderItem';
+import css from './GenralSlider.module.css';
+import ItemCollection from './Components/Item';
 //slider imports
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 //
-export const MovieSlider = function ({ fetchBy, sliderSetting }) {
+const MovieSlider = function ({ fetchBy, sliderSetting }) {
   const [movies, setMovies] = useState([]);
   const [loader, setLoader] = useState(true);
   const [width] = useState(window.innerWidth);
@@ -69,3 +69,4 @@ export const MovieSlider = function ({ fetchBy, sliderSetting }) {
     </>
   );
 };
+export default MovieSlider;
