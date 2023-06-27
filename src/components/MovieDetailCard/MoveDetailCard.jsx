@@ -7,7 +7,6 @@ import {
   addToFavorite,
   deleteFromFavorite,
 } from 'Redux/FavoriteSlice/favoriteSlice';
-import { toast } from 'react-toastify';
 import ScrollToTop from 'Function/ScrollToTop';
 // components
 import {
@@ -21,7 +20,8 @@ import Loader from 'components/Loader/Loader';
 import DescriptionPart from './ItemDescription/DescriptionPart';
 
 //
-
+import { notificationSuccess } from 'Notification/success';
+import { notificationErorr } from 'Notification/erorr';
 //
 const ItemCard = function () {
   const [movie, setMovie] = useState({});
@@ -33,28 +33,11 @@ const ItemCard = function () {
     const filtered = favorite.every(item => item.id !== movie.id);
     if (!filtered) {
       dispatch(deleteFromFavorite(movie));
-      return toast.error('Видалено', {
-        position: 'top-right',
-        autoClose: 1000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: 'dark',
-      });
+      notificationErorr('Видалено!');
+      return;
     }
     dispatch(addToFavorite(movie));
-    toast.success('Додали!', {
-      position: 'top-right',
-      autoClose: 1000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'dark',
-    });
+    notificationSuccess('Додали!');
   };
 
   const { movieId } = useParams();

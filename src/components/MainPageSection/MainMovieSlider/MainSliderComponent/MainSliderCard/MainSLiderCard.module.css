@@ -2,11 +2,7 @@
   color: #fff;
   text-decoration: none;
 }
-.popularImg {
-  /* display: block; */
-  /* margin: 0 auto;
-  margin: 0; */
-}
+
 .textContainer {
   margin-left: auto;
   margin-right: auto;
@@ -36,8 +32,6 @@
   margin-left: 5px;
 }
 
-.overviewPar {
-}
 .overviewPar > span {
   color: #5a8bf6;
 }

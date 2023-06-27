@@ -34,6 +34,10 @@
 }
 /* mobile  */
 @media (max-width: 600px) {
+  .popularItem {
+    width: 136px;
+    margin: 0 auto;
+  }
 }
 
 /* PC */

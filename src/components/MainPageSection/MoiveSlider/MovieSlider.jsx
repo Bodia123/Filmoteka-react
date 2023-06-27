@@ -20,7 +20,7 @@ export const MovieSlider = function ({ fetchBy, sliderSetting }) {
     infinite: true,
 
     slidesToScroll: 2,
-    slidesToShow: 4,
+    slidesToShow: 5,
     autoplay: true,
     speed: 300,
     autoplaySpeed: 4000,
