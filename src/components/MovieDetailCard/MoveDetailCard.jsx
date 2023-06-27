@@ -28,7 +28,9 @@ const ItemCard = function () {
   const [loader, setLoader] = useState(true);
 
   const favorite = useSelector(state => state.favorite);
+  console.log(favorite);
   const dispatch = useDispatch();
+  // const toggleFavoriteHandle = () => console.log(favorite);
   const toggleFavoriteHandle = e => {
     const filtered = favorite.every(item => item.id !== movie.id);
     if (!filtered) {

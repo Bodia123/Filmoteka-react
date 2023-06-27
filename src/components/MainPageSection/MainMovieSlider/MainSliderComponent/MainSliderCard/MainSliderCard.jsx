@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import css from './MainSLiderCard.module.css';
 const MovieSliderCard = function ({ item }) {
   return (
-    <div key={item.id} className={css.popularItem}>
+    <div className={css.popularItem}>
       <Link to={`/movies/${item.id}`} className={css.popularLink}>
         <img
           src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}

@@ -54,13 +54,13 @@ const MovieSlider = function ({ fetchBy, sliderSetting }) {
           {width >= 1150 ? (
             <Slider {...settingsPC}>
               {movies.map(itemMovie => (
-                <ItemCollection item={itemMovie} />
+                <ItemCollection key={itemMovie.id} item={itemMovie} />
               ))}
             </Slider>
           ) : (
             <Slider {...settingsMOB}>
               {movies.map(itemMovie => (
-                <ItemCollection item={itemMovie} />
+                <ItemCollection key={itemMovie.id} item={itemMovie} />
               ))}
             </Slider>
           )}

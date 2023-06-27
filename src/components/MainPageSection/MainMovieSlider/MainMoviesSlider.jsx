@@ -60,7 +60,7 @@ const MainMovieSlider = function ({ fetchBy }) {
           ) : (
             <Slider {...settingsMOB}>
               {movies.map(itemMovie => (
-                <MovieSliderCard item={itemMovie} />
+                <MovieSliderCard item={itemMovie} key={itemMovie.id} />
               ))}
             </Slider>
           )}
