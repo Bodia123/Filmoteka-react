@@ -82,11 +82,11 @@ export const fetchReview = function (id) {
     .catch(err => console.error(err));
 };
 
-// export const fetchRecomendationForMovie = function (id, page = 1) {
-//   return fetch(
-//     `https://api.themoviedb.org/3/movie/${id}/recommendations?language=uk-UA&page=${page}`,
-//     options
-//   )
-//     .then(response => response.json())
-//     .catch(err => console.error(err));
-// };
+export const fethcGenreList = function () {
+  return fetch(
+    'https://api.themoviedb.org/3/genre/movie/list?language=uk',
+    options
+  )
+    .then(response => response.json())
+    .catch(err => console.error(err));
+};
