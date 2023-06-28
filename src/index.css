@@ -38,6 +38,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.MuiPagination-root {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 .MuiPagination-ul {
+  margin-top: 10px;
   justify-content: center;
 }

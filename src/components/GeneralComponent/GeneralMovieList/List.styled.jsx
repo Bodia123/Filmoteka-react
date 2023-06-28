@@ -19,6 +19,7 @@ export const Item = styled.li`
 `;
 
 export const LinkWrapper = styled(Link)`
+  position: relative;
   display: block;
   text-decoration: none;
   margin: 5px;
@@ -34,4 +35,21 @@ export const LinkWrapper = styled(Link)`
 export const Img = styled.img`
   width: 100%;
   height: 234px;
+`;
+export const VoteCircle = styled.span`
+  position: absolute;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+  padding: 1px;
+  top: 0;
+  left: 5px;
+  color: #fff;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 50%;
+`;
+export const NameMovie = styled.h3`
+  color: #fff;
 `;

@@ -31,7 +31,7 @@ const MovieGenreList = function () {
           Genres page{genreId}
           <ListMovie movie={movies} />
           <Pagination
-            count={pages}
+            count={pages >= 1000 ? 1000 : pages}
             page={pageApi}
             color="primary"
             onChange={(e, value) => {

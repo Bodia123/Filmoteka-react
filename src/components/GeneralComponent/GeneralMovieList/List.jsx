@@ -1,4 +1,12 @@
-import { List, Item, LinkWrapper, Img } from './List.styled';
+import {
+  List,
+  Item,
+  LinkWrapper,
+  Img,
+  VoteCircle,
+  NameMovie,
+} from './List.styled';
+
 const ListMovie = function ({ movie }) {
   return (
     <>
@@ -17,7 +25,8 @@ const ListMovie = function ({ movie }) {
                   }
                   alt={item.name}
                 />
-                <span>{item.title}</span>
+                <VoteCircle>{Math.round(item.vote_average)}</VoteCircle>
+                <NameMovie>{item.title}</NameMovie>
               </LinkWrapper>
             </Item>
           ))}
