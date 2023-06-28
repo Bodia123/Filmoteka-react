@@ -1,3 +1,4 @@
+import ScrollToTop from 'Function/ScrollToTop';
 import {
   List,
   Item,
@@ -6,8 +7,9 @@ import {
   VoteCircle,
   NameMovie,
 } from './List.styled';
-
 const ListMovie = function ({ movie }) {
+  ScrollToTop();
+
   return (
     <>
       {movie === [] ? (

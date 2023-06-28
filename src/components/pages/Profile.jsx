@@ -2,6 +2,7 @@
 import { useSelector } from 'react-redux';
 //components
 import ListMovie from 'components/GeneralComponent/GeneralMovieList/List';
+import Title from 'components/GeneralComponent/Titles/Title';
 //
 
 const Profile = function () {
@@ -9,6 +10,7 @@ const Profile = function () {
 
   return (
     <>
+      <Title text={'Подивитись пізніше!'} />
       <ListMovie movie={favorite} />
     </>
   );

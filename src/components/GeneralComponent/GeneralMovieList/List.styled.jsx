@@ -12,7 +12,7 @@ export const List = styled.ul`
   list-style: none;
 `;
 export const Item = styled.li`
-  width: 136px;
+  width: 156px;
   @media (min-width: 900px) {
     width: 176px;
   }
